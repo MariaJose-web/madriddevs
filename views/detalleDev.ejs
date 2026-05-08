@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Devs</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!--Cabera-->
+   <header>
+       <h1> Información sobre: </h1>
+       <h2><%= persona.nombre %> <%= persona.apellidos  %></h2>
+    </header> 
+    <!--Cuerpo de la pagina -->
+    <main>
+        <span>ID:</span> <span><%= persona.id %></span>
+        <p>Fecha de Nacimiento: <%= persona.fecha_de_nacimiento %></p>
+        <p>Role: <%= persona.rol %></p>
+        <p>Estado: <%= persona.estado %></p>
+
+    </main>
+    
+    
+</body>
+</html>
