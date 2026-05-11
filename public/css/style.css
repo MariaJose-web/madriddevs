@@ -1,3 +1,20 @@
-body{
-    background-color: orange;
+@font-face {
+    font-family: MonsieurLaDoulaise;
+    src: url('../fonts/MonsieurLaDoulaise-Regular.ttf');
+    font-weight: 900; /* Tipo de trazo. este es negrita*/
+}
+
+@font-face {
+    font-family: Federo;
+    src: url('../fonts/Federo-Regular.ttf');
+    font-weight: 900; /* Tipo de trazo. este es negrita*/
+}
+
+main {
+    font-family: federo, sans-serif;
+}
+ 
+.primeraletra {
+    font-family: MonsieurLaDoulaise, sans-serif;
+    font-size: 2em;  /* Tamaño del fuente*/
 }

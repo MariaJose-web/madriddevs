@@ -17,4 +17,15 @@
 15.Creamos un ruta para mostrar los devs
 16.Creamos una ruta indivual para un dev
 17.Mostramos la lista en un ejs
-18.Mostramos al dev en un ejs 
+18.Mostramos al dev en un ejs Hasta aqui
+19.Crear partials header.ejs y footer.ejs
+20.Añadir bootstrap en header y en footer el js
+21.Poner los includes adecuados en lista.ejs y en item-lista
+22.Instalar bootstrap npm install
+23.Dar estilo a la lista y a item-lista
+24.Crear partials header.ejs y footer.ejs
+25.Añadir bootstrap en header y en footer el js
+26.Poner los includes adecuados en lista.ejs y en item-lista
+27.Instalar bootstrap npm install
+28.Dar estilo a la lista y a item-lista
+

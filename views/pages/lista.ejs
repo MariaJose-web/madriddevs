@@ -1,0 +1,18 @@
+<%- include('../partials/head') %>
+
+<body>
+    <!--Cabera-->
+   <header>
+       <h1>Lista de Devs</h1>
+    </header> 
+    <!--Cuerpo de la pagina -->
+    <main>
+        <ul>
+            <% listadoDevs.forEach(item => { %>
+               <li><a href="/lista/<%= item.id %>"><%= item.nombre %></a></li> 
+            <% }); %>
+        </ul>
+    </main>
+    
+    
+<%- include('../partials/footer') %>

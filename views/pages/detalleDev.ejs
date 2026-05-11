@@ -1,0 +1,27 @@
+<%- include('../partials/head') %>
+
+<body>
+    <!--Cabera-->
+   <header>
+       <h1> Información sobre: </h1>
+       <img src="<%= persona.avatar %>" alt="La imagne del perfil."><h2><%= persona.nombre %> </h2>
+    </header> 
+    <!--Cuerpo de la pagina -->
+    <main class="">
+        <span class="primeraletra">ID:</span> <span><%= persona.id %></span>
+        <br>
+        <span class="primeraletra">E</span><span>dad:</span> <span><%= persona.edad %></span>
+        <br>
+        <span class="primeraletra">P</span> <span> rofesión:</span> <span><%= persona.profesion %></span>
+        <br>
+        <span class="primeraletra">C</span> <span>iudad:</span> <span><%= persona.ciudad %></span>
+        <br>
+        <span class="primeraletra">C</span> <span>orreo:</span> <span><%= persona.email %></span>
+        <br>
+        <span class="primeraletra">A</span> <span>ctivo:</span> <span><%= persona.activo %></span>
+        <br>
+        <span class="primeraletra">L</span> <span>enguajes:</span> <span><%= persona.skills %></span>
+    </main>
+    
+    
+<%- include('../partials/footer') %>

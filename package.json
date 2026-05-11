@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/MariaJose-web/madriddevs#readme",
   "dependencies": {
+    "bootstrap": "^5.3.8",
     "ejs": "^5.0.2",
     "express": "^5.2.1"
   },

@@ -1,7 +1,7 @@
 // Importamos express, 
 import express from "express";
 //Importamos el json. 
-import data from './data.json' with { type:"json" };
+import data from './data/data.json' with { type:"json" };
 //Generamos las variables funcionales. 
 const app = express(); 
 const port = 3000; 
@@ -13,7 +13,7 @@ app.use('/', express.static('public'));
 //Configuramos ejs. para decir que es el motor de plantillas. 
 app.set('view engine', 'ejs') 
 //Definimos la carpeta que vamos a utilizar. si no se pone nada por defecto es views. 
-app.set('views', './views') 
+app.set('views', './views/pages') 
 
 //Rutas
 app.get('/', (req, res) => {
@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 // Dirección Dinamica para la lista de usuarios. 
 const mostrarLista = function (req, res) {
     //res.json(data); 
-    res.render('lista.ejs', {data}); 
+    res.render('lista.ejs', { listadoDevs: data.devs }); 
  }
 app.get('/lista', mostrarLista); 
 
@@ -31,7 +31,7 @@ app.get('/lista', mostrarLista);
 const mostrarUno = function (req, res) {
     const {id} = req.params;  //DEvuelve un objeto en string
     //const id = parseInt(req.params.id);   Generamos un campo nuevp accediendo a la variable que es un string y luego lo convertimos a un numerico.
-    const persona = data.find((item) => item.id==id);  
+    const persona = data.devs.find((item) => item.id==id);  
     //res.send(persona); 
     res.render('detalleDev.ejs', {persona});
 } 
