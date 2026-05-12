@@ -38,4 +38,7 @@ const mostrarUno = function (req, res) {
 app.get('/lista/:id', mostrarUno); 
 
 //Lanzar Servidor
-app.listen(port, ()=>{console.log(`Has iniciado servicio en el puesto ${port}`)})
+app.listen(port, (error)=>{
+    if (error) {console.log(error);};
+    console.log(`Has iniciado servicio en el puesto ${port}`)
+})
